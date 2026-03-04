@@ -15,6 +15,7 @@ import {
   Award,
   ChevronLeft,
   ChevronRight,
+  Menu,
   X,
 } from "lucide-react"
 import Link from "next/link"
@@ -177,6 +178,30 @@ export default function ServicesPage() {
                 <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Contact
                 </Link>
+              </div>
+              <div className="md:hidden relative">
+                <details className="group">
+                  <summary className="list-none cursor-pointer select-none text-white hover:text-orange-400 transition-colors">
+                    <Menu className="h-7 w-7" />
+                  </summary>
+                  <div className="absolute right-0 mt-3 w-56 rounded-lg border border-orange-500/20 bg-black/95 backdrop-blur-md shadow-lg overflow-hidden">
+                    <Link href="/" className="block px-4 py-3 text-white hover:bg-orange-500/10">
+                      Home
+                    </Link>
+                    <Link href="/about" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      About
+                    </Link>
+                    <Link href="/services" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      Services
+                    </Link>
+                    <Link href="/portfolio" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      Portfolio
+                    </Link>
+                    <Link href="/contact" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      Contact
+                    </Link>
+                  </div>
+                </details>
               </div>
             </div>
           </div>
