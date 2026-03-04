@@ -222,7 +222,7 @@ export default function ServicesPage() {
               <Card className="bg-gray-900/50 border-orange-500/20">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-6">Services Include:</h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {brandingServices.map((service, index) => (
                       <div key={index} className="flex items-center space-x-3">
                         <CheckCircle className="h-5 w-5 text-orange-400 flex-shrink-0" />
@@ -258,7 +258,7 @@ export default function ServicesPage() {
                     </Button>
                   </div>
                 </div>
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                   {brandingImages.slice(currentBrandingSlide, currentBrandingSlide + 5).map((image, index) => (
                     <div
                       key={index}
@@ -350,7 +350,7 @@ export default function ServicesPage() {
                     </Button>
                   </div>
                 </div>
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                   {mediaImages.slice(currentMediaSlide, currentMediaSlide + 5).map((image, index) => (
                     <div
                       key={index}

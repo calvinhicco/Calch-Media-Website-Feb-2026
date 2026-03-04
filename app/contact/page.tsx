@@ -129,8 +129,8 @@ export default function ContactPage() {
               </div>
 
               <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30 px-4 py-2">Get In Touch</Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold text-white">Let's Create Together</h1>
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Let's Create Together</h1>
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 Have a project in mind or want to learn more about our services? We would love to hear from you. Reach
                 out today, and let's build something exceptional.
               </p>

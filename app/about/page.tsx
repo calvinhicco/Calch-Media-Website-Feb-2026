@@ -81,8 +81,8 @@ export default function AboutPage() {
               <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30 px-4 py-2">
                 About Calch Media
               </Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold text-white">Crafting Excellence Since 2017</h1>
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Crafting Excellence Since 2017</h1>
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 We deliver integrated Marketing Solutions, Media Production, and I.T. Solutions that help brands grow,
                 stay visible, and operate efficiently.
               </p>

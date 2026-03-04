@@ -131,8 +131,8 @@ export default function PortfolioPage() {
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30 px-4 py-2">Our Portfolio</Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold text-white">Our Work</h1>
-              <p className="text-xl text-gray-300 leading-relaxed">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">Our Work</h1>
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
                 We are proud of the work we do and the results we deliver for our clients. Explore some of our favorite
                 projects below.
               </p>

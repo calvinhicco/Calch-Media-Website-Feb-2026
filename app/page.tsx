@@ -84,7 +84,7 @@ export default function HomePage() {
           <div className="container mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh] relative">
               {/* Hero Image 2 - Static next to main text, only visible in hero section */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 pointer-events-none">
+              <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-5 pointer-events-none">
                 <Image
                   src="/images/hero/hero-image-2.png"
                   alt="Calch Media Work Sample 2"
@@ -104,7 +104,7 @@ export default function HomePage() {
 
               {/* Hero Image 1 - Static in bottom right corner, only visible in hero section */}
               <div
-                className="absolute bottom-0 right-4 z-20 pointer-events-none"
+                className="hidden md:block absolute bottom-0 right-4 z-20 pointer-events-none"
                 style={{ width: "15vw", height: "15vh" }}
               >
                 <div className="relative w-full h-full">
@@ -134,8 +134,8 @@ export default function HomePage() {
                       className="mb-4"
                     />
                   </div>
-                  <h1 className="text-6xl lg:text-7xl font-bold text-white leading-tight">Calch Media</h1>
-                  <p className="text-xl lg:text-2xl text-gray-300 font-light">
+                  <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">Calch Media</h1>
+                  <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 font-light">
                     The Touch of Art in Marketing, Media & I.T. Solutions.
                   </p>
                 </div>
