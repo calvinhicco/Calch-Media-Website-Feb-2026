@@ -285,8 +285,8 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-bold text-white">I.T. Solutions</h3>
                   <p className="text-gray-300">
-                    We architect and build powerful digital experiences, including custom web applications, mobile apps,
-                    and e-commerce platforms to elevate your brand.
+                    We architect and build powerful digital experiences, including My Students Track, a major successful
+                    school management system, plus custom web applications, mobile apps, and e-commerce platforms.
                   </p>
                   <Button variant="ghost" className="text-orange-400 hover:text-orange-300 p-0">
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -302,29 +302,27 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30 px-4 py-2">
-                  My Students Track
+                  I.T. Solutions
                 </Badge>
-                <h2 className="text-4xl lg:text-5xl font-bold text-white">
-                  Zimbabwe&apos;s Best School Management System is Here
-                </h2>
-                <p className="text-xl text-orange-300">School owners, directors, and administrators — this is for you.</p>
+                <h2 className="text-4xl lg:text-5xl font-bold text-white">My Students Track</h2>
+                <p className="text-xl text-orange-300">A major successful I.T. software solution by Calch Media.</p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Monitor fees, expenses, transport, and uniform sales from one system. Works online or offline, with
-                  budget-friendly packages and a once-off offline licence. Built to grow with your school.
+                  School management software for owners, directors, and administrators. It brings fees, transport,
+                  uniform sales, expenses, and academic reports into one system, and it runs online or offline.
                 </p>
                 <Link href="/my-students-track">
                   <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
-                    See Benefits and Packages
+                    View Product Summary
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  "Know today's income and expenses instantly.",
-                  "See outstanding fees in real time.",
-                  "AI-powered daily business summary.",
-                  "Parents access academic reports online on Premium.",
+                  "Fees, transport, inventory, and accounts in one system.",
+                  "Online packages or a once-off offline lifetime licence.",
+                  "Financial reports and an AI daily business summary.",
+                  "Built by Calch Media and ready to grow with the school.",
                 ].map((point) => (
                   <div key={point} className="bg-gray-900/50 border border-orange-500/20 rounded-lg p-5 text-gray-200">
                     {point}

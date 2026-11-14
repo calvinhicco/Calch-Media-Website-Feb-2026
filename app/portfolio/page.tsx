@@ -71,12 +71,12 @@ export default function PortfolioPage() {
       tags: ["Tourism Marketing", "Campaign Design", "Multi-media"],
     },
     {
-      title: "My Students Track — School Management System",
+      title: "My Students Track — I.T. Software Solution",
       description:
-        "Zimbabwe's school management system for owners, directors, and administrators. It runs online or offline, covers fees, transport, uniform sales, expenses, and academic reports, and is offered in budget-friendly packages including a once-off lifetime offline licence.",
+        "A major successful I.T. software solution by Calch Media. School management for owners, directors, and administrators, covering fees, transport, uniform sales, expenses, and academic reports, online or offline.",
       category: "I.T. Solutions",
       image: "/images/portfolio/my-students-track.jpg",
-      tags: ["School Administration", "Fees & Finance", "Online or Offline"],
+      tags: ["Calch Media Software", "School Administration", "Online or Offline"],
       href: "/my-students-track",
     },
   ]
@@ -227,7 +227,7 @@ export default function PortfolioPage() {
                     <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>
                     {"href" in project && project.href ? (
                       <Link href={project.href} className="inline-flex items-center text-orange-400 text-sm font-medium">
-                        View packages and details
+                        View product summary
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     ) : null}

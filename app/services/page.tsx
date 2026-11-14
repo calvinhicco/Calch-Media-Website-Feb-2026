@@ -492,14 +492,14 @@ export default function ServicesPage() {
                         />
                       </div>
                       <h4 className="text-xl font-bold text-white mb-2">
-                        My Students Track — Zimbabwe&apos;s School Management System
+                        My Students Track — Major I.T. Software Solution
                       </h4>
                       <p className="text-gray-300">
-                        For school owners, directors, and administrators. Run fees, transport, inventory, and reports
-                        online or offline, with budget-friendly packages and a lifetime offline licence.
+                        A major successful school management system by Calch Media. It covers fees, transport, inventory,
+                        accounts, and reports, and it runs online or offline.
                       </p>
                       <Link href="/my-students-track" className="inline-flex items-center text-orange-400 mt-4">
-                        View packages and details
+                        View product summary
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </CardContent>
