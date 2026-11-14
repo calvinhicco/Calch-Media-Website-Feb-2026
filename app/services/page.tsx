@@ -52,6 +52,7 @@ export default function ServicesPage() {
   ]
 
   const softwareServices = [
+    "School Management Systems — My Students Track",
     "Custom Web Application Development",
     "Mobile App Development (iOS & Android)",
     "E-commerce Solutions",
@@ -175,6 +176,9 @@ export default function ServicesPage() {
                 <Link href="/portfolio" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Portfolio
                 </Link>
+                <Link href="/my-students-track" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  School System
+                </Link>
                 <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Contact
                 </Link>
@@ -196,6 +200,9 @@ export default function ServicesPage() {
                     </Link>
                     <Link href="/portfolio" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Portfolio
+                    </Link>
+                    <Link href="/my-students-track" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      School System
                     </Link>
                     <Link href="/contact" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Contact
@@ -485,11 +492,16 @@ export default function ServicesPage() {
                         />
                       </div>
                       <h4 className="text-xl font-bold text-white mb-2">
-                        My Students Track - A Comprehensive School Management Admin Software (2025)
+                        My Students Track — Zimbabwe&apos;s School Management System
                       </h4>
                       <p className="text-gray-300">
-                        Complete school administration software for managing students, staff, and academic operations.
+                        For school owners, directors, and administrators. Run fees, transport, inventory, and reports
+                        online or offline, with budget-friendly packages and a lifetime offline licence.
                       </p>
+                      <Link href="/my-students-track" className="inline-flex items-center text-orange-400 mt-4">
+                        View packages and details
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
                     </CardContent>
                   </Card>
                 </div>

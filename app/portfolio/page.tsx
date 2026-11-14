@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Filter, Menu } from "lucide-react"
+import { ArrowRight, ExternalLink, Filter, Menu } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
@@ -71,12 +71,13 @@ export default function PortfolioPage() {
       tags: ["Tourism Marketing", "Campaign Design", "Multi-media"],
     },
     {
-      title: "School Management System (My Students Track)",
+      title: "My Students Track — School Management System",
       description:
-        "Est. 2025. A fast-growing school administration system that manages fees payments, school uniform sales, academic results, communication and any other payment that requires record keeping. Widely used across Zimbabwe by schools seeking a reliable, easy-to-use platform for day-to-day operations.",
+        "Zimbabwe's school management system for owners, directors, and administrators. It runs online or offline, covers fees, transport, uniform sales, expenses, and academic reports, and is offered in budget-friendly packages including a once-off lifetime offline licence.",
       category: "I.T. Solutions",
-      image: "/images/portfolio/croco-motors-ecommerce.jpg",
-      tags: ["School Administration", "Student Management", "Zimbabwe"],
+      image: "/images/portfolio/my-students-track.jpg",
+      tags: ["School Administration", "Fees & Finance", "Online or Offline"],
+      href: "/my-students-track",
     },
   ]
 
@@ -118,6 +119,9 @@ export default function PortfolioPage() {
                 <Link href="/portfolio" className="text-white hover:text-orange-400 transition-colors">
                   Portfolio
                 </Link>
+                <Link href="/my-students-track" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  School System
+                </Link>
                 <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Contact
                 </Link>
@@ -139,6 +143,9 @@ export default function PortfolioPage() {
                     </Link>
                     <Link href="/portfolio" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Portfolio
+                    </Link>
+                    <Link href="/my-students-track" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      School System
                     </Link>
                     <Link href="/contact" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Contact
@@ -218,6 +225,12 @@ export default function PortfolioPage() {
                       {project.title}
                     </h3>
                     <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>
+                    {"href" in project && project.href ? (
+                      <Link href={project.href} className="inline-flex items-center text-orange-400 text-sm font-medium">
+                        View packages and details
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    ) : null}
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, tagIndex) => (
                         <Badge

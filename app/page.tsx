@@ -71,6 +71,9 @@ export default function HomePage() {
                 <Link href="/portfolio" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Portfolio
                 </Link>
+                <Link href="/my-students-track" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  School System
+                </Link>
                 <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Contact
                 </Link>
@@ -92,6 +95,9 @@ export default function HomePage() {
                     </Link>
                     <Link href="/portfolio" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Portfolio
+                    </Link>
+                    <Link href="/my-students-track" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      School System
                     </Link>
                     <Link href="/contact" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Contact
@@ -287,6 +293,44 @@ export default function HomePage() {
                   </Button>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 px-6 border-y border-orange-500/20">
+          <div className="container mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30 px-4 py-2">
+                  My Students Track
+                </Badge>
+                <h2 className="text-4xl lg:text-5xl font-bold text-white">
+                  Zimbabwe&apos;s Best School Management System is Here
+                </h2>
+                <p className="text-xl text-orange-300">School owners, directors, and administrators — this is for you.</p>
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  Monitor fees, expenses, transport, and uniform sales from one system. Works online or offline, with
+                  budget-friendly packages and a once-off offline licence. Built to grow with your school.
+                </p>
+                <Link href="/my-students-track">
+                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+                    See Benefits and Packages
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "Know today's income and expenses instantly.",
+                  "See outstanding fees in real time.",
+                  "AI-powered daily business summary.",
+                  "Parents access academic reports online on Premium.",
+                ].map((point) => (
+                  <div key={point} className="bg-gray-900/50 border border-orange-500/20 rounded-lg p-5 text-gray-200">
+                    {point}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

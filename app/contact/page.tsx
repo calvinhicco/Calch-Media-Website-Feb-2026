@@ -104,6 +104,9 @@ export default function ContactPage() {
                 <Link href="/portfolio" className="text-gray-300 hover:text-orange-400 transition-colors">
                   Portfolio
                 </Link>
+                <Link href="/my-students-track" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  School System
+                </Link>
                 <Link href="/contact" className="text-white hover:text-orange-400 transition-colors">
                   Contact
                 </Link>
@@ -125,6 +128,9 @@ export default function ContactPage() {
                     </Link>
                     <Link href="/portfolio" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Portfolio
+                    </Link>
+                    <Link href="/my-students-track" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
+                      School System
                     </Link>
                     <Link href="/contact" className="block px-4 py-3 text-gray-200 hover:bg-orange-500/10">
                       Contact
